@@ -6,6 +6,10 @@ variable "projectName" {
   default = "EKS-QUICK-SERVE"
 }
 
+variable "labRole" {
+  default = "arn:aws:iam::133489939751:role/LabRole"
+}
+
 variable "accessConfig" {
   default = "API_AND_CONFIG_MAP"
 }
@@ -19,7 +23,7 @@ variable "instanceType" {
 }
 
 variable "principalArn" {
-  default = "arn:aws:iam::514520473745:role/eks-cluster-role"
+  default = "arn:aws:iam::133489939751:role/voclabs"
 }
 
 variable "policyArn" {
