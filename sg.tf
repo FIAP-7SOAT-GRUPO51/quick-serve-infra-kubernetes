@@ -1,13 +1,13 @@
 resource "aws_security_group" "sg" {
   name        = "SG-${var.projectName}"
-  description = "Usado no EKS com 6/7SOAT"
+  description = "Usado no EKS QUICK SERVE"
   vpc_id      = ""
 
   # Inbound
   ingress {
     description = "HTTP"
-    from_port   = 80
-    to_port     = 80
+    from_port   = 30081
+    to_port     = 30081
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
