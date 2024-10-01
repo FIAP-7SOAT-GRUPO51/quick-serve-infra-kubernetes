@@ -5,10 +5,10 @@ resource "aws_security_group" "sg" {
 
   # Inbound
   ingress {
-    description = "HTTP"
-    from_port   = 30081
-    to_port     = 30081
-    protocol    = "tcp"
+    from_port = "0"
+    to_port   = "0"
+    protocol  = "-1"
+    self      = true
     cidr_blocks = ["0.0.0.0/0"]
   }
 
